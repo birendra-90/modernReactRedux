@@ -1,4 +1,4 @@
-import {FETCH_POST} from '../actions/index';
+import {FETCH_POSTS} from '../actions/index';
 
 const INITIAL_STATE = {
   all: [],
@@ -7,7 +7,7 @@ const INITIAL_STATE = {
 
 export default function(state = INITIAL_STATE, action){
   switch(action.type){
-    case FETCH_POST:
+    case FETCH_POSTS:
       return {...state, all: action.payload.data};
     default:
       return state;
